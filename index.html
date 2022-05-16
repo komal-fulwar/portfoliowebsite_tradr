@@ -5104,7 +5104,7 @@
         }
     </style>
     <style>
-        #outer {
+        #myVideo {
   width: 100%;
   border-collapse: separate;
   border-radius: 20px;
@@ -5890,10 +5890,11 @@
                                                                                 <video
                                                                                 autoPlay
                                                                                 controls
+                                                                                id="myVideo" 
                                                                                 controlsList="nodownload"
                                                                             
                                                                                 loop
-                                                                                id="outer"
+                                                                           
                                                                                
                                                                               >
                                                                                 <source
@@ -6754,6 +6755,12 @@ Accelerate your trading journey with TRADR's - </div>
 
                         });
                     </script>
+                    <script>
+                        function myFunction() {
+                          var x = document.getElementById("myVideo").autoplay;
+                          
+                        }
+                        </script>
 
 </body>
 
