@@ -5111,6 +5111,80 @@
   overflow: hidden;
   
 }
+#rssBlock{
+  left:0px;
+  height: 80px;
+  background: #000000;
+  position: absolute;
+  width:1070px;
+  overflow: hidden;
+}
+
+/*remove p*/
+.cnnContents {
+  width:100%;
+ 
+
+  font-size: 30px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  
+  font-weight: 300;
+}
+
+.marqueeStyle {
+  display:inline-block;
+  /* Apply animation to this element */
+  -webkit-animation: scrolling-left1 20s linear infinite;
+  animation: scrolling-left1 20s linear infinite;
+  color: #B6FB44;
+    font-family: "Inter", Sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+}
+
+.marqueeStyle2 {
+  display:inline-block;
+  /* Apply animation to this element */
+  -webkit-animation: scrolling-left2 20s linear infinite;
+  animation: scrolling-left2 20s linear infinite;
+  animation-delay: 10s;
+    color: #B6FB44;
+    font-family: "Inter", Sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+}
+/* scrolling-left is continuous/repeatly text */
+@keyframes scrolling-left1 {
+    0% {transform: translateX(100%);
+        -webkit-transform: translateX(100%);}
+      100% {transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);}
+}
+@keyframes scrolling-left2 {
+    0% {transform: translateX(0%);
+        -webkit-transform: translateX(0%);}
+      100% {transform: translateX(-200%);
+          -webkit-transform: translateX(-200%);}
+}
+
+@-webkit-keyframes scrolling-left1 {
+    0% {-webkit-transform: translateX(100%);}
+      100% {-webkit-transform: translateX(-100%);}
+}
+@-webkit-keyframes scrolling-left2 {
+    0% {-webkit-transform: translateX(0%);}
+      100% {-webkit-transform: translateX(-200%);}
+}
+
+
+
     </style>
     <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSpace+Grotesk%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.9.3'
         type='text/css' media='all' />
@@ -6352,34 +6426,53 @@ Accelerate your trading journey with TRADR's - </div>
                             </div>
                             </div>
                             </section>
-                            <section class="elementor-section elementor-top-section elementor-element elementor-element-af754f2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="af754f2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                            <section class="elementor-section elementor-top-section elementor-element elementor-element-af754f2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="af754f2" data-element_type="section"  data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                 <div class="elementor-container elementor-column-gap-no">
-                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-71b99e4 elementor-invisible" data-id="71b99e4" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-71b99e4 elementor-invisible" data-id="71b99e4" data-element_type="column"  data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
                                         <div class="elementor-widget-wrap elementor-element-populated">
-                                            <section class="elementor-section elementor-inner-section elementor-element elementor-element-d847af0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d847af0" data-element_type="section">
-                                                <div class="elementor-container elementor-column-gap-no">
-                                                    <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-f02b56a" data-id="f02b56a" data-element_type="column">
+                                            <section  class="elementor-section elementor-inner-section elementor-element elementor-element-d847af0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d847af0" data-element_type="section">
+                                                <div  class="elementor-container elementor-column-gap-no">
+                                                    <div style="background-color: #a3ff0e;  border-radius: 40px;" class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-f02b56a" data-id="f02b56a" data-element_type="column">
                                                         <div class="elementor-widget-wrap elementor-element-populated">
                                                             <div class="elementor-element elementor-element-9c958a4 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="9c958a4" data-element_type="widget" data-widget_type="text-editor.default">
-                                                                <div class="elementor-widget-container">
-                                                                    Want to get more Tradr? </div>
+                                                                <div class="elementor-widget-container" >
+                                                                    <span style="color: #000000 ;     "> Tradr associates are connective and friendly</span>
+                                                                    </div>
                                                             </div>
                                                             <div class="elementor-element elementor-element-11ea6ca elementor-widget elementor-widget-text-editor" data-id="11ea6ca" data-element_type="widget" data-widget_type="text-editor.default">
                                                                 <div class="elementor-widget-container" style="text-align: justify;">
-                                                                    Tradr associates are connective and friendly.Connect with our Tradr associates personally for
-                            more details and clarify all your doubts.</div>
+                                                                  </div>
                                                             </div>
-                                                            <div class="elementor-element elementor-element-c011659 elementor-tablet-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="c011659" data-element_type="widget" data-widget_type="button.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="elementor-button-wrapper">
-                                                                        <a href="/shop" class="elementor-button-link elementor-button elementor-size-xl" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Browse</span>
-		</span>
-					</a>
+                                                            <div class="row " style="margin: auto;">
+                                                                <div style="margin: 10px;" class="elementor-element elementor-element-c011659 elementor-tablet-align-center elementor-align-center elementor-widget elementor-widget-button col-1" data-id="c011659" data-element_type="widget" data-widget_type="button.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <div class="elementor-button-wrapper">
+                                                                            <a  style="background-color: #000000; color: #9BD738;     font-family: 'Inter', Sans-serif;" href="/shop" class="elementor-button-link elementor-button elementor-size-xl" role="button">
+                            <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-text">SAGAR</span>
+                            
+            </span>
+            
+                        </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                      
+                                                                <div style="margin: 10px;" class="elementor-element elementor-element-c011659 elementor-tablet-align-center elementor-align-center elementor-widget elementor-widget-button col-1" data-id="c011659" data-element_type="widget" data-widget_type="button.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <div class="elementor-button-wrapper">
+                                                                            <a  style="background-color: #000000; color: #9BD738;  font-family: 'Inter', Sans-serif;" href="/shop" class="elementor-button-link elementor-button elementor-size-xl" role="button">
+                            <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-text">YASH</span>
+                            
+            </span>
+            
+                        </a>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                           
                                                             <div class="elementor-element elementor-element-6f14e3f elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-image" data-id="6f14e3f" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
@@ -6400,6 +6493,14 @@ Accelerate your trading journey with TRADR's - </div>
                                     </div>
                                 </div>
                             </section>
+                            <div id='rssBlock'>
+   <p class="cnnContents">
+       <span class="marqueeStyle">&nbsp;continuous infinite text loop 1 continuous infinite text loop 2 </span>
+ <!-- duplicate above, change style to allow continous scroll -->
+        <span class="marqueeStyle2">&nbsp;continuous infinite text loop 3 continuous infinite text loop 4&nbsp;</span>
+      </p>
+      </div>
+
                             </div>
                             </div>
                             <!-- .entry-content -->
