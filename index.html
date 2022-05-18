@@ -6033,8 +6033,13 @@
                                                                                   type="video/mp4"
                                                                                 />
                                                                                 Your browser does not support HTML5 video.
-                                                                              </video> </div>
+                                                                              </video>
+                                                                               </div>
                                                                         </div>
+                                                                        <audio controls autoplay  style="display: none;">
+                                                                            <source  src="img/introvid.mp3" type="audio/mp3">
+                                                                         
+                                                                          </audio>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -6528,6 +6533,10 @@ Accelerate your trading journey with TRADR's - </div>
                     <!-- GA Google Analytics @ https://m0n.co/ga -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187555911-1"></script>
                     <script>
+                        var sample = document.getElementById("foobar");
+sample.play();
+                    </script>
+                    <script>
                         window.dataLayer = window.dataLayer || [];
 
                         function gtag() {
@@ -6917,10 +6926,9 @@ Accelerate your trading journey with TRADR's - </div>
                         });
                     </script>
                     <script>
-                        function myFunction() {
-                          var x = document.getElementById("myVideo").autoplay;
-                          
-                        }
+                        window.onload = function() {
+    document.getElementById("tah_audio").play();
+}
                         </script>
 
 </body>
